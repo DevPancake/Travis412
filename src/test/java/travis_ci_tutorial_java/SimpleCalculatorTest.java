@@ -17,6 +17,12 @@ public class SimpleCalculatorTest {
     }
 
     @Test
+    public void testSubtractAgain() {
+        SimpleCalculator calc = new SimpleCalculator();
+        assertEquals(calc.subtract(5, 3), 2);  // Additional test for subtraction
+    }
+
+    @Test
     public void testMultiply() {
         SimpleCalculator calc = new SimpleCalculator();
         assertEquals(calc.multiply(4, 3), 12);
